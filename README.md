@@ -99,3 +99,32 @@
    <h3> OUTPUT :
    
    ![image](https://user-images.githubusercontent.com/114164139/212256206-4ec4aa3e-a288-41c3-9882-916562d54b08.png)
+ 
+       
+       
+           <h1> ch2-1 </h1>      
+
+           <h3> 1. WAP to find factorial of all elements from given array using inline function. </h3>
+       
+       #include <iostream>
+       using namespace std;
+       inline int fact(int n)
+       {
+              if (n <= 1)
+           {
+                   return 1;
+           }
+              else
+          {
+                   return n * fact(n - 1);
+          }
+       }
+                        
+       int main()
+       {
+           int a, ans;
+           cout << "Enter Number = ";
+           cin >> a;
+           ans = fact(a);
+           cout << "Factorial : " << ans;
+       }
